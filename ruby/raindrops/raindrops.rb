@@ -1,9 +1,6 @@
-require 'prime'
-
 class Raindrops
 
   def self.convert (number)
-
     translation = {3 => "Pling", 5 => "Plang", 7 => "Plong"} 
     result = ""
 
