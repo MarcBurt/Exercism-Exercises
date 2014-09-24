@@ -1,10 +1,10 @@
 class Squares
   def initialize(num)
-    @range = (1..num).to_a #generates an array [1,2,3,4 .. up to the value of num]
+    @range = (1..num) #generates the numbers to num (1,2,3,4)
   end
 
   def square_of_sums
-    (@range.inject {|result, number| number + result})**2
+    @range.inject(:+)**2 # :+ creates the block to add each to the sum
   end
 
   def sum_of_squares
